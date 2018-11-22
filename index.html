@@ -3,24 +3,28 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 <head>
-	<title> Cửa sổ hẹn hò </title>
+	<title> Đăng ký </title>
 </head>
-<body>
-	<div class="background">
-		<img src="bgr-slider.jpg" style="width: 100%">
-		<div class="information">
+<body class="main">
+	<div class="Container">
+		<div class="Login-Form">
 			<form>
-				<label>Username: </label><input type="text" name="Username"><br>
-				<label>Password: </label><input type="pass" name="password"><br>
-				<label>Age: </label><input type="text" name="age"><br>
-				<label>Gender: </label><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female<br>
-				<div class="text-box">
-					<label>About yourself: </label><input type="text" name="introduce"><br>
+				<label>Username: </label><input type="Text" class="Form-Control" name="Username"><br>
+				<label>Password: </label><input type="Pass" class="Form-Control" name="Password"><br>
+				<label>Full Name: </label><input type="Text" class="Form-Control" name="Full-Name"><br>
+				<label>Age: </label><input type="Text" class="Form-Control" name="Age"><br>
+				<label>Gender: </label><input type="Radio" name="Gender">Male
+									   <input type="Radio" name="Gender">Female<br>
+				<div class="Text-Box">
+					<label>About yourself: </label><input type="Text" class="Form-Control-Text" name="Introduce"><br>
 				</div>
-				<input type="submit" name="Send-box" value="Send">
-				<input type="submit" name="Go back" value="Go Back">
+				<div class="Submit-Box">
+					<input type="Submit" name="Đăng ký" value="Đăng ký">
+					<input type="Submit" name="Quay lại" value="Quay lại">
+				</div>
 			</form>
 		</div>
 	</div>
 </body>
 </html>
+
