@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700|Roboto:300,400,500,700");
+
+/* Màu nền*/
+
+body {
+  background:url(x.jpg);
+  background-size: cover;
+}
+
+* {box-sizing: border-box}
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.Login-Form {
+  max-width: 1300px;
+  padding-left: 300px;
+}
+.pad-top {
+  padding-top: 75px;
+}
+.pad-bot {
+  padding-bottom: 75px;
+}
+.table {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.table2 {
+  background: lightblue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: table;
+}
+.table2 .left-table {
+  display: table-cell;
+  width: 50%;
+}
+.table2 .right-table {
+  padding: 20px 30px;
+  padding-bottom: 35px;
+  display: table-cell;
+}
+.left-table {
+  background: url("icon.png") center no-repeat;
+} 
+
+@media screen and (max-width: 300px) {
+  .Cancel, .Signup {
+    width: 100%
+  }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+/* Nút cancel */
+.Cancel {
+  float: left;
+  padding: 14px 20px;
+  background-color: red;
+  color: white;
+  width: 49%;
+}
+/* Nút signup*/
+.Signup {
+  float: right;
+  padding: 14px 20px;
+  background-color: green;
+  color: white;
+  width: 49%;
+}
+/* Nút login */
+.Login {
+  width: 100%;
+  color: white;
+  background-color: green;
+  padding: 14px 20px;
+}
+
+
+
+
+

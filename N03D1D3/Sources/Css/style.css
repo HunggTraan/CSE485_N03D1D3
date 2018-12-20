@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+
+/* tất cả các link */
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+body {
+	line-height: 24px;
+	font-size: 14px;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+}
+
+body {
+	background-image: url(x.jpg);
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	z-index: -1;
+}
+
+
+h3, h5{
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+
+.h2-font{
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+/* chỉnh sửa header */
+.header_area {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.header_area .navbar {
+	background: transparent;
+	padding: 0px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+#navbarSupportedContent{
+	font-size: 18px;
+}
+
+#navbarSupportedContent{
+	margin-top: 60px;
+}
+
+.header_area .navbar .nav .nav-item {
+	margin-right: 30px;
+}
+
+.header_area .navbar .nav .nav-item .nav-link {
+	font: 500 20px/100px "Roboto", sans-serif;
+	text-transform: uppercase;
+	color: #D53238;
+	padding: 0px;
+	display: inline-block;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+	color: #3248D5;
+}
+
+.header_area .navbar .nav .nav-item.submenu {
+	position: relative;
+}
+
+/* vị trí banner và các nút đăng nhập, tạo tài khoản */
+.home_banner_area {
+	position: relative;
+	z-index: 1;
+	min-height: 800px;
+}
+
+.home_banner_area .banner_inner {
+	position: relative;
+	overflow: inherit;
+	width: 100%;
+	min-height: 1000px;
+}
+
+
+.home_banner_area .banner_inner .banner_content {
+	color: #000;
+}
+
+.home_banner_area .banner_inner .banner_content h5,h4 {
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 0px;
+	letter-spacing: 2px;
+}
+
+.home_banner_area .banner_inner .banner_content h3,h2 {
+	font-size: 36px;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 45px;
+	margin-bottom: 10px;
+}
+
+.home_banner_area .banner_inner .banner_content p {
+	font-size: 15px;
+	line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	max-width: 100%;
+	margin: auto;
+}
+
+.home_banner_area .banner_inner .banner_content .org_btn{
+	margin-right: 10px;
+	margin-top: 45px;
+}
+
+
+/* tất cả nút */
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 26px;
+	border: none;
+	cursor: pointer;
+	width: 25%;
+	font-size:20px;
+}
+
+button:focus {
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.org_btn {
+	padding: 0px 40px;
+	background-image: -webkit-gradient(linear, left top, right top, from(#f766a5), color-stop(51%, #f78762), to(#f766a5));
+	background-image: -webkit-linear-gradient(left, #f766a5 0%, #f78762 51%, #f766a5 100%);
+	background-image: -o-linear-gradient(left, #f766a5 0%, #f78762 51%, #f766a5 100%);
+	background-image: linear-gradient(to right, #f766a5 0%, #f78762 51%, #f766a5 100%);
+	background-size: 200% auto;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transition: all 400ms ease-out;
+	-o-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	line-height: 50px;
+	border-radius: 5px;
+}
+
+.org_btn:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.green_btn {
+	padding: 0px 40px;
+	background-image: -webkit-gradient(linear, left top, right top, from(#73ca96), color-stop(51%, #98d370), to(#73ca96));
+	background-image: -webkit-linear-gradient(left, #73ca96 0%, #98d370 51%, #73ca96 100%);
+	background-image: -o-linear-gradient(left, #73ca96 0%, #98d370 51%, #73ca96 100%);
+	background-image: linear-gradient(to right, #73ca96 0%, #98d370 51%, #73ca96 100%);
+	background-size: 200% auto;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transition: all 400ms ease-out;
+	-o-transition: all 400ms ease-out;
+	transition: all 400ms ease-out;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	line-height: 50px;
+	border-radius: 5px;
+}
+
+.green_btn:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* logo */
+.logo_h{
+	margin-left: -130px;
+	margin-top: 20px
+}
+
+/* Giấy */
+.paper {
+	background-color: #fff;
+	position: relative;
+	padding: 150px 30px 50px;
+	margin: 20px 20px -180px;
+}
+
+.paper,
+.paper::before,
+.paper::after {
+	box-shadow: 5px 2px 2px rgba(0,0,0,0.15);
+}
+
+.paper::before,
+.paper::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #eeefff;
+}
+
+/* Second sheet of paper */
+.paper::before {
+	left: 10px;
+	top: 10px;
+	z-index: -1;
+}
+
+/* Third sheet of paper */
+.paper::after {
+	left: 10px;
+	top: 14px;
+	z-index: -2;
+}
+
+
+/*FAQ*/
+
+input {
+	display: none;
+}
+
+label > i {
+	margin: 5px 0px 3px;
+	font-size: large;
+	transition: all 0.3s linear;
+}
+
+input:checked + label > i {
+	transform: rotate(75deg);
+}
+
+label + p {
+	line-height: 0%;
+	color: darkslategray;
+	transform: rotateX(90deg);
+	transition: all 0.2s linear;
+}
+
+input:checked + label + p {
+	transform: rotateX(0);
+	line-height: 100%;
+	line-height: auto;
+}
+
+@media (min-width: 992px) {
+  .header_area .navbar .nav .nav-item.submenu ul {
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    min-width: 200px;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    visibility: hidden;
+    display: block;
+    border: none;
+    padding: 0px;
+    border-radius: 0px;
+  }
+}
+
+.p_120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.Container {
+	width: 100%;
+}
+.login-form {
+	padding-left: 233px;
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+}
