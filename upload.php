@@ -1,20 +1,20 @@
 <?php
 	session_start();
 	$db = mysqli_connect("localhost","root","","soulmate");
-	$msg = "";
 	if(isset($_POST['Submit'])) {
 		$Imagesname = $_FILES['Imagesname']['name'];
 		$target = "images/".basename($Imagesname);
+		$About = $_POST['About'];
 		$text = mysqli_real_escape_string($db,$_POST['About']); 
-		$sql = "INSERT INTO photos (Image,About) VALUES ('$Imagesname,$text')";
+		$sql = "INSERT INTO photos (Image, About) VALUES ('$Imagesname', '$text')";
 		mysqli_query($db, $sql);
 		if (move_uploaded_file($_FILES['Imagesname']['tmp_name'], $target)) {
-	  		$msg = "Image uploaded successfully";
+	  		echo "Image uploaded successfully";
 	 	 	} else {
-	  		$msg = "Failed to upload image";
+	  		echo "Failed to upload image";
 	 	 		}	
 		    }
-	 		$result = mysqli_query($db, "SELECT * FROM photos");
+	 		$result = mysqli_query($db, "SELECT * FROM photos"); 
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +59,7 @@
 									</div>
 									<input type="file" accept="image/*" name="Imagesname" id="Imagesname" class="btn btn-success form-control" onchange="previewFile()" />
 									<span id="lblmsg" style="color: red;"></span><br/>
-									<label>Giới thiệu bản thân: </label><textarea rows="5" cols="100" name="About"></textarea>
+									Giới thiệu bản thân: <textarea rows="5" cols="100" name="About"></textarea>
 								</div>
 							</div>
 						</div>
