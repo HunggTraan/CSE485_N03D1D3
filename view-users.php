@@ -25,20 +25,21 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
  <?php
- echo "<h1>Users</h1>";
+ echo "<h1>Thành viên</h1>";
  if (mysqli_num_rows($records) > 0) {
     echo "<table class='table table-hover table-responsive table-bordered'>";
      echo "<tr>";
-        echo "<th>Username</th>";
-        echo "<th>Fullname</th>";
+        echo "<th>Tên tài khoản</th>";
+        echo "<th>Họ và tên</th>";
         echo "<th>Email</th>";
-        echo "<th>ContactNumber</th>";
-        echo "<th>AccessLevel</th>";
+        echo "<th>Điện thoại</th>";
+        echo "<th>Quyền truy cập</th>";
     echo "</tr>";
     // output data of each row
     while($rows = mysqli_fetch_assoc($records)) {
@@ -56,5 +57,6 @@ session_start();
 }
 
  ?>
+ <a href="adminpage.php" class="btn btn-info">Quay lại</a>
 </body>
 </html>

@@ -98,9 +98,9 @@
 								<input type="Text" placeholder="Yoooo" name="Age">
 							</div>
 						</div>
-						<div class="clearfix">
-							<a href="index.php">Hủy bỏ</a>
-							<button type="Submit" class="signup_btn" name="signup_btn">Đăng ký</button>
+						<div>
+							<a id="button_signup" class="org_btn" href="index.php">Hủy bỏ</a>
+							<button id="button_signup" type="submit" class="green_btn" href="signup.php">Đăng ký</button>
 						</div>
 					</form>
 				</div>

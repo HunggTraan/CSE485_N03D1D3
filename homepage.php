@@ -25,13 +25,10 @@
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container box_1620">
-					<a class="navbar-brand logo_h" href="index.php"><img style="width: 50%" src="Pictures/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="homepage.php"><img style="width: 50%" src="Pictures/logo.png" alt=""></a>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="homepage.php">Home</a></li> 
-							<li class="nav-item"><a class="nav-link" href="AboutUs.html">Về chúng tôi</a></li> 
-							<li class="nav-item"><a class="nav-link" href="faq.html">Những câu hỏi thường gặp</a>
-							<li class="nav-item"><a class="nav-link" href="Contact.html">Liên hệ</a></li>
+							<li class="nav-item"><a class="nav-link" href="homepage.php">Trang chu</a></li> 
 							<li class="nav-item"><a class="nav-link" href="information.php">Tài khoản</a>
 							<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 							</ul>
@@ -47,6 +44,7 @@
 				<div class="container">
 					<div class="banner_content text-center ">
 						<h3>Tìm ngay <br />Một nửa còn lại của chính mình</h3>
+						<a class="org_btn" href="Finding/finding.php">Tìm kiếm ngay</a>
 				</div>
 			</section>
 
