@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2018 at 09:59 AM
+-- Generation Time: Jan 03, 2019 at 03:18 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -44,12 +44,12 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`Username`, `Password`, `Email`, `Fullname`, `Address`, `ContactNumber`, `Age`, `AccessLevel`) VALUES
-('Admin123', 'Admin', 'Admin123@gmail.com', 'Adminn', 'Here', 'no', 100, 'Admin'),
-('Duy1234', 'Duy1234', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 25, 'Member'),
-('Hung1234', 'Hung1234', 'hung1234@gmail.com', 'Hung', 'HungAddress', '232323232323', 26, 'Member'),
-('Linh1234', 'Linh1234', 'linh1234@gmail.com', 'Linhlinh', 'linhlinhlinh', '6969696969', 23, 'Member'),
-('NguyenDuy', '57ba172a6be125cca2f449826f9980ca', 'DuyNguyen123@gmail.com', 'Nguyen Duy', 'HaNoi', '0123456789', 20, 'Member'),
-('Tuan1234', 'Tuan1234', 'Tuan1234@gmail.com', 'TuanTuan', 'TuanAddress', '6990599343', 12, 'Member');
+('Admin123', 'Admin', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 27, 'Admin'),
+('Duy1234', 'Duy1234', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '0123545232', 30, 'Member'),
+('Hung1234', 'Hung1234', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 27, 'Member'),
+('Linh1234', 'Linh1234', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 27, 'Member'),
+('NguyenDuy', '57ba172a6be125cca2f449826f9980ca', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 27, 'Member'),
+('Tuan1234', 'Tuan1234', 'duy1234@gmail.com', 'Duy123', 'DuyAddress', '09563729475', 27, 'Member');
 
 --
 -- Indexes for dumped tables
