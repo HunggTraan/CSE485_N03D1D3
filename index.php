@@ -12,9 +12,8 @@
 	<title></title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/Login.css">
 </head>
-<body style="background: url('images/love.png'); background-size: cover;">
+<body style="background: url('images/love.png'); background-size: cover; overflow: hidden;">
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">

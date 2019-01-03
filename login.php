@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$db = mysqli_connect("localhost","root","","soulmate");
+$db = mysqli_connect("localhost", "Admin", "30@12@1998", "soulmate");
 if(isset($_SESSION['Username'])) {
 	header("location: homepage.php");
 }
@@ -30,6 +30,7 @@ else if(isset($_POST['login_btn'])){
 	}
 	else {
 		$_SESSION['message'] = "Failed to login";
+		echo "Failed to login";
 	}
 }
 ?>

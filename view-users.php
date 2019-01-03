@@ -1,6 +1,6 @@
 <?php
 session_start();
-  $db = mysqli_connect("localhost","root","","soulmate");
+  $db = mysqli_connect("localhost", "Admin", "30@12@1998", "soulmate");
   $sql = "SELECT * FROM account";
   $records = mysqli_query($db,$sql);
 /*  $field = mysqli_fetch_assoc($records);
@@ -31,15 +31,15 @@ session_start();
 </head>
 <body>
  <?php
- echo "<h1>Thành viên</h1>";
+ echo "<h1>Users</h1>";
  if (mysqli_num_rows($records) > 0) {
     echo "<table class='table table-hover table-responsive table-bordered'>";
      echo "<tr>";
-        echo "<th>Tên tài khoản</th>";
-        echo "<th>Họ và tên</th>";
+        echo "<th>Username</th>";
+        echo "<th>Fullname</th>";
         echo "<th>Email</th>";
-        echo "<th>Điện thoại</th>";
-        echo "<th>Quyền truy cập</th>";
+        echo "<th>ContactNumber</th>";
+        echo "<th>AccessLevel</th>";
     echo "</tr>";
     // output data of each row
     while($rows = mysqli_fetch_assoc($records)) {
@@ -57,6 +57,6 @@ session_start();
 }
 
  ?>
- <a href="adminpage.php" class="btn btn-info">Quay lại</a>
+ <a href="adminpage.php" class="btn btn-info">Go back</a>
 </body>
 </html>

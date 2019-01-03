@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$Username = $_SESSION['Username'];
-	$db = mysqli_connect("localhost","root","","soulmate");
+	$db = mysqli_connect("localhost", "Admin", "30@12@1998", "soulmate");
 	$records = mysqli_query($db,"SELECT * FROM account WHERE Username = '$Username'");
 	$rows = mysqli_num_rows($records);
 	if ($rows == 1) {

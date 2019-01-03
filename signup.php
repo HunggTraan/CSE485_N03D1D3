@@ -1,7 +1,7 @@
 
 <?php
 	session_start();
-	$db = mysqli_connect("localhost","root","","soulmate");
+	$db = mysqli_connect("localhost", "Admin", "30@12@1998", "soulmate");
 	if (isset($_POST['signup_btn'])) {
 		$Username = $_POST['Username'];
 		$Password = $_POST['Password'];
@@ -98,7 +98,7 @@
 								<input type="Text" placeholder="Yoooo" name="Age">
 							</div>
 						</div>
-						<div>
+						<div id="signup-btn">
 							<a id="button_signup" class="org_btn" href="index.php">Hủy bỏ</a>
 							<button id="button_signup" type="submit" class="green_btn" href="signup.php">Đăng ký</button>
 						</div>

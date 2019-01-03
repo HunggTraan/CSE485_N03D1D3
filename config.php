@@ -1,7 +1,7 @@
 <?php
 $Hostname = "localhost";
-$Username = "root";
-$Password = "";
+$Username = "Admin";
+$Password = "30@12@1998";
 $db = "soulmate";
 try {    
     //create PDO connection 

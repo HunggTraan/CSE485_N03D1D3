@@ -1,20 +1,25 @@
 <?php
-	session_start();
-	$db = mysqli_connect("localhost","root","","soulmate");
-	if(isset($_POST['Submit'])) {
-		$Imagesname = $_FILES['Imagesname']['name'];
-		$target = "images/".basename($Imagesname);
-		$About = $_POST['About'];
-		$text = mysqli_real_escape_string($db,$_POST['About']); 
-		$sql = "INSERT INTO photos (Image, About) VALUES ('$Imagesname', '$text')";
-		mysqli_query($db, $sql);
-		if (move_uploaded_file($_FILES['Imagesname']['tmp_name'], $target)) {
-	  		echo "Image uploaded successfully";
-	 	 	} else {
-	  		echo "Failed to upload image";
-	 	 		}	
-		    }
-	 		$result = mysqli_query($db, "SELECT * FROM photos"); 
+session_start();
+$db = mysqli_connect("localhost","root","","soulmate");
+$msg = "";
+if(isset($_POST['Submit'])) {
+	$Imagesname = $_FILES['Imagesname']['name'];
+	$target = "images/".basename($Imagesname);
+	$About = $_POST['About'];
+	$text = mysqli_real_escape_string($db,$_POST['About']); 
+	$sql = "INSERT INTO photos (Image,About) VALUES ('$Imagesname,$text')";
+	$sql = "INSERT INTO photos (Image, About) VALUES ('$Imagesname', '$text')";
+	mysqli_query($db, $sql);
+	if (move_uploaded_file($_FILES['Imagesname']['tmp_name'], $target)) {
+		$msg = "Image uploaded successfully";
+		error.html("<p>Upload ảnh thành công</p>");
+	} else {
+		$msg = "Failed to upload image";
+		error.html("<p>Upload ảnh thành công</p>");
+	}	
+}
+$result = mysqli_query($db, "SELECT * FROM photos");
+$result = mysqli_query($db, "SELECT * FROM photos"); 
 ?>
 
 <!DOCTYPE html>
@@ -59,7 +64,7 @@
 									</div>
 									<input type="file" accept="image/*" name="Imagesname" id="Imagesname" class="btn btn-success form-control" onchange="previewFile()" />
 									<span id="lblmsg" style="color: red;"></span><br/>
-									Giới thiệu bản thân: <textarea rows="5" cols="100" name="About"></textarea>
+									<label>Giới thiệu bản thân: </label><textarea rows="5" cols="100" name="About"></textarea>
 								</div>
 							</div>
 						</div>
@@ -75,6 +80,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		function previewFile() {
 			var preview = document.querySelector('img');
@@ -93,17 +99,15 @@
 			var Imagesname = $("#Imagesname").val();
 			if (Imagesname == "" || Imagesname == null) {
 				$("#Imagesname").css("border", "2px solid red");
-		//$("#Imagesname").focus();
-		$("#lblmsg").html("Please Choose Gallery Image");
-		rtn = false;
-	} else {
-		$("#Imagesname").css("border", "1px solid #ccc");
-		$("#lblmsg").html("");
-	}
-	return rtn;
-}
+ 		//$("#Imagesname").focus();
+ 		$("#lblmsg").html("Please Choose Gallery Image");
+ 		rtn = false;
+ 	} else {
+ 		$("#Imagesname").css("border", "1px solid #ccc");
+ 		$("#lblmsg").html("");
+ 	}
+ 	return rtn;
+ }
 </script>
 </body>
 </html>
-
-
