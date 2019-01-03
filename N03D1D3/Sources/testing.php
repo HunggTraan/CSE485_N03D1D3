@@ -1,5 +1,5 @@
 <?php
-	$db = mysqli_connect("localhost","root","","soulmate");
+	$db = mysqli_connect("localhost", "Admin", "30@12@1998", "soulmate");
 	if (isset($_POST['signup_btn'])) {
 		$Username = $_POST['Username'];
 		$Password = $_POST['Password'];

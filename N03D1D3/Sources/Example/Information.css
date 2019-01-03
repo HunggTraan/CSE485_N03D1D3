@@ -2,17 +2,13 @@
 	max-width: 1300px;
 	padding-left: 300px;
 }
-.Contain-Form {
-	max-width: 500px;
-	padding-left: 100px;
-}
 .Left-Table {
 	background-color: lightblue;
   display: table-cell;
   width: 30%;
 }
 .Right-Table {
-	background-color: linen;
+	background-color: gray;
 	padding-left: 20px;
 	padding-right: 20px;
   padding-bottom: 35px;
@@ -33,7 +29,6 @@
   width: 100%;
   display: table;
 }
-
 .Table {
   overflow: hidden;
   -webkit-border-radius: 3px;
@@ -86,7 +81,4 @@ a:hover {
 .text-area {
 	width: 100%;
 	box-sizing: content-box;
-}
-label, a {
-	font-family: sans-serif;
 }

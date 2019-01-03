@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 
-
 /* tất cả các link */
 a {
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+body{
+	background: url(../images/love.png);
 }
 
 a:hover, a:focus {
@@ -22,18 +24,6 @@ body {
 	font-weight: normal;
 }
 
-body {
-	background-image: url(x.jpg);
-	background-size: cover;
-	background-position: center;
-	left: 0;
-	right: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	bottom: 0;
-	z-index: -1;
-}
 
 
 h3, h5{
@@ -41,17 +31,13 @@ h3, h5{
 	font-weight: 500;
 }
 
-.h2-font{
-	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
-}
 /* chỉnh sửa header */
 .header_area {
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 10;
 }
 
 .header_area .navbar {
@@ -66,7 +52,7 @@ h3, h5{
 }
 
 #navbarSupportedContent{
-	margin-top: 60px;
+	margin-top: 10px;
 }
 
 .header_area .navbar .nav .nav-item {
@@ -74,15 +60,15 @@ h3, h5{
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-	font: 500 20px/100px "Roboto", sans-serif;
+	font: 500 18px/100px "Roboto", sans-serif;
 	text-transform: uppercase;
-	color: #D53238;
+	color: black;
 	padding: 0px;
 	display: inline-block;
 }
 
 .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-	color: #3248D5;
+	color: red;
 }
 
 .header_area .navbar .nav .nav-item.submenu {
@@ -108,18 +94,9 @@ h3, h5{
 	color: #000;
 }
 
-.home_banner_area .banner_inner .banner_content h5,h4 {
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	margin-bottom: 0px;
-	letter-spacing: 2px;
-}
-
-.home_banner_area .banner_inner .banner_content h3,h2 {
+.home_banner_area .banner_inner .banner_content h3 {
 	font-size: 36px;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Dancing Script', cursive;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 45px;
@@ -149,7 +126,7 @@ button {
 	margin: 8px 26px;
 	border: none;
 	cursor: pointer;
-	width: 25%;
+	width: 250px;
 	font-size:20px;
 }
 
@@ -215,48 +192,6 @@ button:focus {
 	text-decoration: none;
 }
 
-/* logo */
-.logo_h{
-	margin-left: -130px;
-	margin-top: 20px
-}
-
-/* Giấy */
-.paper {
-	background-color: #fff;
-	position: relative;
-	padding: 150px 30px 50px;
-	margin: 20px 20px -180px;
-}
-
-.paper,
-.paper::before,
-.paper::after {
-	box-shadow: 5px 2px 2px rgba(0,0,0,0.15);
-}
-
-.paper::before,
-.paper::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #eeefff;
-}
-
-/* Second sheet of paper */
-.paper::before {
-	left: 10px;
-	top: 10px;
-	z-index: -1;
-}
-
-/* Third sheet of paper */
-.paper::after {
-	left: 10px;
-	top: 14px;
-	z-index: -2;
-}
 
 
 /*FAQ*/
@@ -266,7 +201,7 @@ input {
 }
 
 label > i {
-	margin: 5px 0px 3px;
+	margin: 6px 0px 3px;
 	font-size: large;
 	transition: all 0.3s linear;
 }
@@ -279,7 +214,7 @@ label + p {
 	line-height: 0%;
 	color: darkslategray;
 	transform: rotateX(90deg);
-	transition: all 0.2s linear;
+	transition: all 0.5s linear;
 }
 
 input:checked + label + p {
@@ -289,27 +224,27 @@ input:checked + label + p {
 }
 
 @media (min-width: 992px) {
-  .header_area .navbar .nav .nav-item.submenu ul {
-    position: absolute;
-    top: 120%;
-    left: 0px;
-    min-width: 200px;
-    text-align: left;
-    opacity: 0;
-    -webkit-transition: all 300ms ease-in;
-    -o-transition: all 300ms ease-in;
-    transition: all 300ms ease-in;
-    visibility: hidden;
-    display: block;
-    border: none;
-    padding: 0px;
-    border-radius: 0px;
-  }
+	.header_area .navbar .nav .nav-item.submenu ul {
+		position: absolute;
+		top: 120%;
+		left: 0px;
+		min-width: 200px;
+		text-align: left;
+		opacity: 0;
+		-webkit-transition: all 300ms ease-in;
+		-o-transition: all 300ms ease-in;
+		transition: all 300ms ease-in;
+		visibility: hidden;
+		display: block;
+		border: none;
+		padding: 0px;
+		border-radius: 0px;
+	}
 }
 
 .p_120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+	padding-top: 120px;
+	padding-bottom: 120px;
 }
 .Container {
 	width: 100%;
@@ -319,4 +254,122 @@ input:checked + label + p {
 	width: 50%;
 	text-align: center;
 	justify-content: center;
+}
+
+
+/* Login */
+
+.fb-login{
+	background-color: #4c66a4;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px transparent;
+	margin-bottom: 25px;
+}
+#txtUsername, #txtPassword{
+	width: 100%;
+	margin-bottom: 20px;
+}
+#fb_p{
+	color: white;
+	padding-top: 10px;
+}
+#login_p{
+	color:white;
+	padding-top:10px;
+}
+#btnLogin{
+	background-color:#111111;
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	border: 1px transparent;
+	cursor: pointer;
+	max-width: 120px;
+	margin-top: 20px;
+}
+.btnLogin:hover{
+	background-color: black;
+}
+.padding{
+	padding-top: 60px;
+}
+#para{
+	color:#555555;
+	font-size:18px;
+}
+#para input[type=text], input[type=password]{
+	display: block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background-color: white !important;
+	max-width: 600px;
+}
+#error{
+	color: red;
+	font-size: 20px;
+}
+
+#form_login{
+	background: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	margin: 100px 30px 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+/* finding */
+
+.image-show{
+	max-height: 500px;
+	max-width: 400px;
+}
+
+.image-show{
+	margin-left: 180px;
+	margin-top: 90px;
+	transition: transform 400ms ease-out;
+}
+
+.image-show:hover {
+	transform: scale(1.05);
+}
+
+.btn_finding{
+	margin-left: 150px;
+	margin-bottom: 350px;
+}
+
+.finding-body{
+	position: fixed;
+}
+
+.text-build{
+	text-align: left;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
+	max-width: 100%;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+#h3-text{
+	font-size: 36px;
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 45px;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 25px;
 }

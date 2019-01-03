@@ -1,0 +1,13 @@
+.Login-Form {
+	font-size: 20px;
+	position: fixed;
+	color: black;
+	padding-left: 15px;
+}
+.Form-Control {
+	width: 100%;
+	line-height: 1.5;
+}
+.Form-Control-Text {
+	line-height: 4;
+}

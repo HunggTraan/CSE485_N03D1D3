@@ -1,11 +1,11 @@
 input[type=text], input[type=password] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 26px;
+    width: 80%;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-size:16px;
+    margin-bottom: 10px;
+    margin-left: 10px !important;
 }
 
 
